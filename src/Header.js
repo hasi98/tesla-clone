@@ -28,7 +28,7 @@ function Header({isMenuOpen, setIsMenuOpen}) {
       <div className='header__right'>
         <Link to="/" className={isMenuOpen && "header__link--hidden"}>Shop</Link>
         <Link to="/login" className={isMenuOpen && "header__link--hidden"}>Account</Link>
-        <div className='header__menu' inClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <div className='header__menu' onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </div>
         
